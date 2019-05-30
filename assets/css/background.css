@@ -13,8 +13,9 @@ html, body{
 	background: linear-gradient(0deg,  rgba(46, 9, 61, 0.589) 50%,rgba(43, 1, 1, 0.705) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(27, 131, 122, .9)', endColorstr='rgba(43, 1, 1, 0.705)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-attachment: fixed;
-    background-size: cover;
-    ;
+	background-size: cover;
+	font-family: 'Montserrat Alternates', sans-serif;
+
 }
 
 #projector {
