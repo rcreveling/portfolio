@@ -1,2 +1,0 @@
-# zen-garden
-namaste
