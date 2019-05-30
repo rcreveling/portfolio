@@ -54,9 +54,11 @@ z-index: 1;
     text-shadow: 0px 0px 4px white;
     padding: 0 !important;
     z-index: 1;
-
-
 }
+.titles:hover {
+    text-shadow: 0px 0px 9px white;
+}
+
 .clearfix::after {
     content: “”;
     display: block;
@@ -84,8 +86,15 @@ background-color: transparent !important;
 border-radius: 50%;
 box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);
 z-index: 2;
-
 }
+
+#main-head-icon:hover {
+    -webkit-animation: shadow-grow 3s infinite; /* Safari 4+ */
+    -moz-animation:    shadow-grow 3s infinite; /* Fx 3+ */
+    -o-animation:      shadow-grow 3s infinite; /* Opera 12+ */
+    animation:         shadow-grow 3s infinite;
+}
+
 .main-image-text {
     z-index: 2;
 
@@ -133,6 +142,33 @@ td>div {
 }
 
 .websiteImages:hover {
-    box-shadow: 0px 0px 9px rgba(199, 0, 0, 1), 0px 0px 18px rgba(255, 148, 148, 1), 0px 0px 30px rgba(41, 80, 255, 1),  0px 0px 35px rgba(105, 12, 114, 1);
+    -webkit-animation: shadow-grow 3s infinite; /* Safari 4+ */
+    -moz-animation:    shadow-grow 3s infinite; /* Fx 3+ */
+    -o-animation:      shadow-grow 3s infinite; /* Opera 12+ */
+    animation:         shadow-grow 3s infinite;
+}
+
+@-webkit-keyframes shadow-grow {
+    0%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+    50% { box-shadow: 0px 0px 18px rgba(199, 0, 0, 0.863), 0px 0px 36px rgba(255, 148, 148, 0.863), 0px 0px 60px rgba(41, 80, 255, 0.747),  0px 0px 70px rgba(105, 12, 114, 0.747);        ; }
+    100%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+  
+}
+  @-moz-keyframes shadow-grow {
+    0%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+    50% { box-shadow: 0px 0px 18px rgba(199, 0, 0, 0.863), 0px 0px 36px rgba(255, 148, 148, 0.863), 0px 0px 60px rgba(41, 80, 255, 0.747),  0px 0px 70px rgba(105, 12, 114, 0.747);        ; }
+    100%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+  
+}
+  @-o-keyframes shadow-grow {
+    0%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+    50% { box-shadow: 0px 0px 18px rgba(199, 0, 0, 0.863), 0px 0px 36px rgba(255, 148, 148, 0.863), 0px 0px 60px rgba(41, 80, 255, 0.747),  0px 0px 70px rgba(105, 12, 114, 0.747);        ; }
+    100%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+
+}
+  @keyframes shadow-grow {
+    0%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
+    50% { box-shadow: 0px 0px 18px rgba(199, 0, 0, 0.863), 0px 0px 36px rgba(255, 148, 148, 0.863), 0px 0px 60px rgba(41, 80, 255, 0.747),  0px 0px 70px rgba(105, 12, 114, 0.747);        ; }
+    100%   { box-shadow: 0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747);        ; }
 
 }
