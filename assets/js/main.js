@@ -53,7 +53,7 @@ function buildTable() {
     })
     $.each(tableContent.descriptions, function () {
         $.each(this, function (name, value) {
-            tablecontent.html("<div class='descriptionDiv'> <h2>" + name + "</h2> <p>" + value + "</p> <div>")
+            tablecontent.html("<div class='descriptionDiv'> <h3>" + name + "</h3> <p>" + value + "</p> <div>")
             var sendthis = tablecontent.html()
             descriptionstoappend.push(sendthis)
         })
@@ -68,7 +68,7 @@ function buildTable() {
         tablerow2.append(appendthis)
     }
     tablerow.children($("<img>")).css({
-        margin: "0 2.5vw 0 3vw",
+        margin: "0 2.5vw 0vh 3vw",
         height: "20vh",
         boxSizing: "border-box",
     })
@@ -78,9 +78,10 @@ function buildTable() {
 
     })
 
-    $("td").children($("h2")).css({
+    $("td").children($("h3")).css({
         textShadow: "0px 0px 9px rgba(199, 0, 0, 0.863), 0px 0px 18px rgba(255, 148, 148, 0.863), 0px 0px 30px rgba(41, 80, 255, 0.747),  0px 0px 35px rgba(105, 12, 114, 0.747)",
-        width: "20vw !important"
+        width: "20vw !important",
+
 
     })
     tablehead.append(tablerow)
@@ -133,12 +134,18 @@ $("#main-head-icon").on("click", function () {
         margin: "auto"
     })
     $("#expanderDiv").append(newDiv)
+
     $("#expandContainer").animate({
         maxWidth: "100vw !important",
         width: "100vw",
-        margin: "0 auto !important"
+        margin: "0 auto !important",
+        opacity: "0.1"
+    }, 0, "linear", function () {
+        $(this).fadeTo(2600, .99)
 
-    }, 1500, "linear")
+    })
+
+
     loadContent();
 })
 
